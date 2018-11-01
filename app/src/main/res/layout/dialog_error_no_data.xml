@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/shape_dialog_bg"
+        android:layout_centerInParent="true"
+        android:layout_margin="50dp">
+
+        <ImageView
+            android:id="@+id/no_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/ic_noworke" />
+
+        <TextView
+            android:id="@+id/tv_net_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_network"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="网络连接失败"
+            android:textColor="#b7b9bd" />
+
+
+        <TextView
+            android:id="@+id/anewClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_net_work"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/shape_work_shape"
+            android:gravity="center"
+            android:text="点击重试"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</RelativeLayout>
